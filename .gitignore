@@ -1,0 +1,6 @@
+.DS_Store
+
+*.pt
+*.7z
+*.rar
+__pycache__
