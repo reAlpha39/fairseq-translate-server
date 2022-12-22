@@ -44,8 +44,8 @@ class Api(Resource):
             print('\n' + content)
             translate = ja2en.translate(content)
             print(translate)
-            return json.dumps(translate)
-            # return jsonify({'content': ja2en.translate(content)})
+            # return json.dumps(translate)
+            return jsonify(ja2en.translate(content))
         except Exception as e:
             return {'error': str(e)}
 
@@ -59,7 +59,7 @@ class Api(Resource):
             print('\n' + content)
             translate = ja2en.translate(content)
             print(translate)
-            return json.dumps(translate)
+            return jsonify(ja2en.translate(content))
             # return jsonify({'content': ja2en.translate(content)})
         except Exception as e:
             return {'error': str(e)}
